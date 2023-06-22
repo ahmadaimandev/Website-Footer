@@ -1,13 +1,14 @@
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
+
 .web-footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f2f2f2;
-  padding: 20px;
+  background-color: #00aeff;
+  padding: 0.4rem;
 }
 
 footer {
@@ -20,36 +21,29 @@ footer {
 }
 
 .comp-logo {
-  align-self: flex-start; /* Add this line */
+  align-self: flex-start;
+  /* Add this line */
 }
 
 .comp-logo img {
   width: 250px;
   height: 100px;
   padding: 40px;
+  margin-bottom: -20px;
 }
 
-.info-col-resources ul,
-.info-col-pricing ul,
-.info-col-company ul,
-.info-col-social ul {
+.info-col-resources ul, .info-col-pricing ul, .info-col-company ul, .info-col-social ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.info-col-resources ul li,
-.info-col-pricing ul li,
-.info-col-company ul li,
-.info-col-social ul li {
-  margin-bottom: 10px;
+.info-col-resources ul li, .info-col-pricing ul li, .info-col-company ul li, .info-col-social ul li {
+  margin-bottom: 0.5rem;
 }
 
-.info-col-resources a,
-.info-col-pricing a,
-.info-col-company a,
-.info-col-social a {
-  color: #333;
+.info-col-resources a, .info-col-pricing a, .info-col-company a, .info-col-social a {
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -57,11 +51,12 @@ footer {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .web-email-sub-button input[type="email"] {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -80,8 +75,10 @@ footer {
 }
 
 /* Remove the p selector */
-.copyright {
+footer .copyright {
   margin-top: 20px;
-  color: #888;
-  text-align: center; /* Add this line to center align the text */
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  /* Add this line to make the width 100% */
 }
