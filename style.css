@@ -1,0 +1,79 @@
+.web-footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;;
+  }
+  
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .comp-logo {
+    align-self: flex-start; /* Add this line */
+  }
+  
+  .comp-logo img {
+    width: 250px;
+    height: 100px;
+    padding: 40px;
+  }
+  
+  .info-col-resources ul,
+  .info-col-pricing ul,
+  .info-col-company ul,
+  .info-col-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .info-col-resources ul li,
+  .info-col-pricing ul li,
+  .info-col-company ul li,
+  .info-col-social ul li {
+    margin-bottom: 10px;
+  }
+  
+  .info-col-resources a,
+  .info-col-pricing a,
+  .info-col-company a,
+  .info-col-social a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .web-email-sub-button label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .web-email-sub-button input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .web-email-sub-button button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .web-email-sub-button button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+  }
+  
