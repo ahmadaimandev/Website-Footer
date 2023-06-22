@@ -32,38 +32,60 @@ footer {
   margin-bottom: -20px;
 }
 
-.info-col-resources ul, .info-col-pricing ul, .info-col-company ul, .info-col-social ul {
+.info-col-resources ul,.info-col-pricing ul,.info-col-company ul,.info-col-social ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-.info-col-resources ul li, .info-col-pricing ul li, .info-col-company ul li, .info-col-social ul li {
+.info-col-resources ul li,.info-col-pricing ul li,.info-col-company ul li,.info-col-social ul li {
   margin-bottom: 0.5rem;
 }
 
-.info-col-resources a, .info-col-pricing a, .info-col-company a, .info-col-social a {
+.info-col-resources a,.info-col-pricing a,.info-col-company a,.info-col-social a {
   color: #ffffff;
   text-decoration: none;
+  position: relative; /* Add this line to position pseudo-element */
+}
+
+.info-col-resources a::after,.info-col-pricing a::after,.info-col-company a::after,.info-col-social a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: -2px; /* Adjust the value as needed to position the underline */
+  left: 0;
+  transform: scaleX(0); /* Initially scale the underline to 0 width */
+  transform-origin: left center;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.info-col-resources a:hover::after,.info-col-pricing a:hover::after,.info-col-company a:hover::after,.info-col-social a:hover::after {
+  transform: scaleX(1); /* Scale the underline to its full width on hover */
 }
 
 .web-email-sub-button label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  text-transform: uppercase;
+  text-align: center;
+}
+
+.web-email-sub-button {
+  text-align: center; /* Add this line to center-align the elements */
 }
 
 .web-email-sub-button input[type="email"] {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Add some spacing between the email input and the button */
 }
 
 .web-email-sub-button button[type="submit"] {
-  padding: 5px 10px;
-  background-color: #333;
+  padding: 10px 20px; /* Increase the padding for a more comfortable button size */
+  background-color: #02294d;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -71,14 +93,16 @@ footer {
 }
 
 .web-email-sub-button button[type="submit"]:hover {
-  background-color: #555;
+  background-color: #004c94;
 }
 
 /* Remove the p selector */
 footer .copyright {
-  margin-top: 20px;
+  margin-top: 10px;
   color: #ffffff;
   text-align: center;
   width: 100%;
+  margin-left: 4rem;
+  justify-content: center;
   /* Add this line to make the width 100% */
 }
